@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Abhinav's Personal Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/69447f2269.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Work Experience</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Certifications</a></li>
+                    <li><a href="#">Contact Me</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <h1> Hola! I am <br>Sai Abhinav Reddy Badinehal</h1> 
+            </div>
+        </div>
+    </div>
+
+
+
+   <!-- About Me Section -->
+   <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/bgimage.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class = "sub-title"> About Me </h1>
+                    <p> A passionate software engineer with a Master's degree in Computer Science and 
+                        hands-on experience at Tata Consultancy Services, specializing in backend development, 
+                        blockchain technology, and AI service integration. 
+                        My drive for continuous learning is showcased by my recent achievement as an AWS Certified Cloud Practitioner. 
+                        I am eager to bring my blend of technical expertise and innovative problem-solving to a dynamic team, contributing to impactful 
+                        and forward-thinking software solutions.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br>Python, Java, C, C#, C++, Solidity, SQL</li>
+                            <li><span>Web Development</span><br>HTML, CSS, JavaScript, ReactJS</li>
+                            <li><span>Data Management and Analytics</span><br>MySQL, MongoDB, Amazon S3</li>
+                            <li><span>FrameWorks</span><br>Flask, Microsoft Bot Framework, Rest API </li>
+                            <li><span>Cloud</span><br> AWS, Azure </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>June 2021 - July 2022</span><br> Software Engineer at Tata Consultancy Services</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>August 2022 - December 2023</span><br>Masters from University at Buffalo</li>
+                            <li><span>June 2017 - June 2021</span><br>Bachelors from GITAM University Hyderabad</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </div>
+   <script>
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add('active-link');
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+   </script>
+
+<!-- Work-Experience Section  -->
+<div id="workexp">
+    <div class="container">
+        <h1 class = "sub-title"> Work-Experience </h1>
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/tcsimage.jpeg">
+            </div>
+            <div class="about-col-2">
+                
+                <div class="workexp-title">
+                    <p class="workexp-links active-links"> Software Engineer </p>
+                    <p class="workexp-links" > Assistant Software Engineer </p>
+                </div>
+
+                <div class="workexp-contents active-tabs" id="se">
+                    <ul>
+                        <span>December 2021 - July 2022</span>
+                        <li>Developed Customs Chatbot for German-based Semiconductor company Infineon by utilizing
+                            Microsoft Bot Framework, Web API, and Python; leveraged bot to provide 85% accurate answers and
+                            ensured delivery of defect free application.</li>
+                        <li>Collaborated closely with clients to understand requirements, incorporating feedback into the
+                            development process, which resulted in a 15% increase in customer satisfaction and 100% on-time
+                            project delivery.</li>
+                        <li>Played a key role in debugging and resolving complex integration issues which enhanced system
+                            reliability by 25% and contributed to the development of robust and scalable backend solutions.</li>
+                    </ul>
+                </div>
+                <div class="workexp-contents" id="ase">
+                    <ul>
+                        <span>June 2021 - November 2021</span>
+                        <li>Designed a chatbot application using React JS, JavaScript, and MySQL that served over 500 users
+                            monthly, providing streamlined teaming-up processes, and received commendable feedback from 95%
+                            of management.</li>
+                        <li>Mentored 10+ new team members through knowledge transfer sessions, contributing towards a smooth
+                            onboarding efficiency and overall team productivity.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Projects Section -->
+<div id="projects-portfolio">
+    <div class="container">
+        <h1 class = "sub-title"> Projects </h1>
+        <div class="project-list">
+            <div class="work">
+                <img src="images/Sigvef.jpeg">
+                <div class="layer">
+                    <h3>DeepSign - Deep Online Handwritten Signature Verification</h3>
+                    <p>To check the genuiness of Online Handwritten Signatures</p>
+                    <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>      
+            <div class="work">
+                <img src="images/bloodbb.png">
+                <div class="layer">
+                    <h3>Blood By Blockchain</h3>
+                    <p>A decentralized marketplace for transparent Blood-Donation System.</p>
+                    <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/cavs.jpeg">
+                <div class="layer">
+                    <h3>Simulation Experiments Using Cyber Attacks on Multi-Lane Traffic Flow of CAV's</h3>
+                    <p>Detecting Cyber - Attacks on CAV's and prompting Driver to take control</p>
+                    <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/pneumonia.png">
+                <div class="layer">
+                <h3>Pneumonia Detection Using CNN </h3>
+                <p> Detecting Pneumonia Infection in Lungs</p>
+                <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>    
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
