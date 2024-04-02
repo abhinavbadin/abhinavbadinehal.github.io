@@ -63,11 +63,24 @@ nav ul li a:hover::after{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .header-text{
-    margin-top: 20%;
+    flex-basis: 60%;
+    /* margin-top: 20%; */
     font-size: 30px;
+    font-weight: 100;
     text-align: left;
+}
+.header-img{
+    flex-basis: 35%;
+}
+
+.header-img img{
+    margin-top: 20%;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
 }
 
 .header-text h1 i{
@@ -89,6 +102,8 @@ nav ul li a:hover::after{
     background: #ff004f;
 }
 
+
+
 /* about section */
 
 #about{
@@ -105,6 +120,7 @@ nav ul li a:hover::after{
 }
 
 .about-col-1 img{
+    margin-top: 8%;
     width: 70%;
     border-radius: 15px;
 }
@@ -291,8 +307,42 @@ nav ul li a:hover::after{
 }
 
 
+/* Certifications Section */
+#certifications{
+    padding: 50px 0;
+}
+.certificate-list{
+    display: flex;
+    /* grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap:40px; */
+    margin-top: 50px;
+}
+.certificate{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.certificate img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.certificate:hover img{
+    transform: scale(1.0);
+}
+
+.certificate:hover .layer{
+    height: 100%;
+}
+
 
 /* contacts section  */
+#contact{
+    padding: 50px 0;
+}
 .contact-left{
     flex-basis: 35%;
 }
@@ -346,13 +396,72 @@ form .btn2{
 }
 
 /* ------------------------css for small screen-------- */
-
-/* @media only screen and (max-width:600px){
+nav .fa-solid{
+    display: none;
+}
+@media only screen and (max-width:600px){
     .header-text{
-        margin-top: 100%;
+        margin-top: 20%;
         font-size: 16px;
     }
     .header-text h1{
         font-size: 30px;
     }
-} */
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+    }
+
+    nav ul{
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        left: -200px; /*play with this*/
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: left 0.5s;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fa-solid{
+        position: absolute;
+        top:25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    .sub-title{
+        font-size: 35px;
+    }
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+    .about-col-2{
+        font-size: 14px;
+    } 
+
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+
+    .header-text, .header-img{
+        flex-basis: 100%;
+    }
+    .header-text{
+        font-size: 14px;
+    }
+
+    #header .container .btn{
+        display: none;
+    }
+
+}

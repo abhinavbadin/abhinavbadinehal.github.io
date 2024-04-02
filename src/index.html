@@ -12,14 +12,16 @@
     <div id="header">
         <div class="container">
             <nav>
-                <ul>
+                <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#workexp">Work Experience</a></li>
                     <li><a href="#projects-portfolio">Projects</a></li>
-                    <li><a href="#">Certifications</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
                     <li><a href="#contact">Contact Me</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-content">
                 <div class="header-text">
@@ -29,12 +31,12 @@
                             <a href="https://github.com/abhinavbadin"><i class="fa-brands fa-github"></i></a>
                             <a href="https://leetcode.com/AbhinavBadinehal/"><img src="images/leetcode.ico" height="30"></a>
                         </div>
+                        
                 </div>
                 <div class="header-img">
-                    <img src="images/IMG_6509_Original.jpeg" alt="Your Image">
+                    <img src="images/IMG_8017_Original.jpg">
                 </div>
             </div>
-            
             <a href="#about" class="btn">Know More</a>
         </div>
     </div>
@@ -64,7 +66,7 @@
 
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>Programming Languages</span><br>Python, Java, C, C#, C++, Solidity, SQL</li>
+                            <li><span>Programming Languages</span><br>Python, C#, Java, C++, C, Solidity, SQL</li>
                             <li><span>Web Development</span><br>HTML, CSS, JavaScript, ReactJS</li>
                             <li><span>Data Management and Analytics</span><br>MySQL, MongoDB, Amazon S3</li>
                             <li><span>FrameWorks</span><br>Flask, Microsoft Bot Framework, Rest API </li>
@@ -110,22 +112,24 @@
                 <div class="workexp-contents active-tab" id="se">
                     <ul>
                         <span>December 2021 - July 2022</span>
-                        <li>Developed Customs Chatbot for German-based Semiconductor company Infineon by utilizing
-                            Microsoft Bot Framework, Web API, and Python; leveraged bot to provide 85% accurate answers and
-                            ensured delivery of defect free application.</li>
+                        <li>Developed Customs Chatbot for German-based Semiconductor company Infineon, leveraging in bot to
+                            provide 97% accurate answers and 15% increase in operational efficiency utilising Microsoft Bot
+                            Framework (C#), Python, MySQL, and REST API.</li>
                         <li>Collaborated closely with clients to understand requirements, incorporating feedback into the
-                            development process, which resulted in a 15% increase in customer satisfaction and 100% on-time
-                            project delivery.</li>
-                        <li>Played a key role in debugging and resolving complex integration issues which enhanced system
-                            reliability by 25% and contributed to the development of robust and scalable backend solutions.</li>
+                            development process, resulting in a 50% increase in customer satisfaction and 100% on-time project
+                            delivery.</li>
+                        <li>Played key role in debugging and resolving complex integration issues, enhancing in system reliability
+                            by 35%.</li>
                     </ul>
                 </div>
                 <div class="workexp-contents" id="ase">
                     <ul>
                         <span>June 2021 - November 2021</span>
-                        <li>Designed a chatbot application using React JS, JavaScript, and MySQL that served over 500 users
-                            monthly, providing streamlined teaming-up processes, and received commendable feedback from 95%
+                        <li>Designed chatbot application using React JS, JavaScript, and MongoDB, serving in over 500 users
+                            monthly, providing streamlined teaming-up processes, and receiving commendable feedback from 95%
                             of management.</li>
+                        <li>Spearheaded the deployment of chatbot application on Azure, leading to enhanced scalability and 20%
+                            reduction in response times for user queries.</li>
                         <li>Mentored 10+ new team members through knowledge transfer sessions, contributing towards a smooth
                             onboarding efficiency and overall team productivity.</li>
                     </ul>
@@ -145,7 +149,7 @@
                 <div class="layer">
                     <h3>DeepSign - Deep Online Handwritten Signature Verification</h3>
                     <p>To check the genuiness of Online Handwritten Signatures</p>
-                    <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                    <a href="https://github.com/abhinavbadin/Biometrics/tree/main/Project"><i class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
             </div>      
             <div class="work">
@@ -153,7 +157,7 @@
                 <div class="layer">
                     <h3>Blood By Blockchain</h3>
                     <p>A decentralized marketplace for transparent Blood-Donation System.</p>
-                    <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                    <a href="https://github.com/abhinavbadin/Blockchain"><i class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
             </div>
             <div class="work">
@@ -161,7 +165,7 @@
                 <div class="layer">
                     <h3>Simulation Experiments Using Cyber Attacks on Multi-Lane Traffic Flow of CAV's</h3>
                     <p>Detecting Cyber - Attacks on CAV's and prompting Driver to take control</p>
-                    <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                    <a href="https://github.com/abhinavbadin/major-project"><i class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
             </div>
             <div class="work">
@@ -169,7 +173,7 @@
                 <div class="layer">
                 <h3>Pneumonia Detection Using CNN </h3>
                 <p> Detecting Pneumonia Infection in Lungs</p>
-                <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                <a href="https://github.com/abhinavbadin/miniproject"><i class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
             </div>    
         </div>
@@ -177,6 +181,22 @@
     </div>
 </div>
 
+<!-- Certifications Section -->
+<div id="certifications">
+    <div class="container">
+        <h1 class="sub-title"> Certifications </h1>
+        <div class="certificate-list">
+            <div class="certificate">
+                <img src="images/AWS-Certified-Cloud-Practitioner_badge.634f8a21af2e0e956ed8905a72366146ba22b74c.png">
+                <div class="layer">
+                    <h3>I am a Certified Cloud Practitioner</h3>
+                    <a href="https://www.credly.com/badges/8b81a7d5-2e9f-4546-b3fe-5d3970794660/linked_in_profile"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
 
 <!-- contancts section  -->
 <div id="contact">
@@ -190,7 +210,7 @@
                     <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
                     <a href="https://www.twitter.com"><i class="fa-brands fa-twitter-square"></i></a>
                 </div>
-                <a href="" class="btn btn2">Download My Resume</a>
+                <a href="images/Badinehal_SaiAbhinavReddy_Resume.pdf" download class="btn btn2">Download My Resume</a>
 
             </div>
             <div class="contact-right">
@@ -240,6 +260,16 @@
         }
     }
 
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.left="0";
+    }
+    function closemenu(){
+        sidemenu.style.left="-200px";
+    }
 </script>
 </body>
 </html>
