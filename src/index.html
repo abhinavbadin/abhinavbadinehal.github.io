@@ -266,10 +266,26 @@
 
     function openmenu(){
         sidemenu.style.left="0";
+        sidemenu.classList.add('open'); // Add this line
+        document.querySelector('.fa-bars').style.display = 'none'; // Hide the hamburger icon
     }
     function closemenu(){
         sidemenu.style.left="-200px";
+        sidemenu.classList.remove('open'); // Add this line
+        document.querySelector('.fa-bars').style.display = 'block'; // Show the hamburger icon again
     }
+    document.addEventListener('DOMContentLoaded', (event) => {
+        // Get all your menu links
+        var menuLinks = document.querySelectorAll('#sidemenu a');
+
+        // Add a click event listener to each link
+        menuLinks.forEach(function(link) {
+            link.addEventListener('click', function() {
+                closemenu(); // Call the closemenu function
+            });
+        });
+    });
+
 </script>
 <script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbyatAO3g5DeWTqv--7OZ34w-56-Dy8H_bKlhO9Y_kmUTkFe_v0HQ1ipbtd0M7hdqNduvQ/exec'

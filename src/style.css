@@ -435,6 +435,19 @@ nav .fa-solid{
         left: 25px;
         cursor: pointer;
     }
+    /* ----added code----- */
+    nav .fa-bars {
+        position: fixed; /* Fixed position regardless of the scroll */
+        top: 10px; /* Distance from the top */
+        left: 10px; /* Distance from the right */
+        z-index: 3; /* Ensure it's above other content */
+        cursor: pointer;
+    }
+
+    nav ul.open {
+        left: 0; /* Adjust if you want the menu to slide in */
+    }
+    /* --------------------------- */
 
     .sub-title{
         font-size: 35px;
