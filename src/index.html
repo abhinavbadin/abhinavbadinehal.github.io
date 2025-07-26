@@ -51,12 +51,11 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class = "sub-title"> About Me </h1>
-                    <p> A passionate software engineer with a Master's degree in Computer Science and 
-                        hands-on experience at Tata Consultancy Services, specializing in backend development, 
-                        blockchain technology, and AI service integration. 
-                        My drive for continuous learning is showcased by my recent achievement as an AWS Certified Cloud Practitioner. 
-                        I am eager to bring my blend of technical expertise and innovative problem-solving to a dynamic team, contributing to impactful 
-                        and forward-thinking software solutions.
+                    <p>
+                        I’m a Software Engineer with 3.5+ years of experience, specializing in backend development, AI service integration, and scalable cloud solutions. 
+                        I hold a Master's in Computer Science (AI Specialization) and am a certified Databricks Data Engineer Associate and AWS Cloud Practitioner. 
+                        My recent work involves building LLM-powered search systems, deploying HIPAA-compliant applications on AWS, and automating data pipelines. 
+                        I’m passionate about solving real-world problems through clean code, smart design, and continuous learning.
                     </p>
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills','a')">Skills</p>
@@ -68,23 +67,29 @@
                         <ul>
                             <li><span>Programming Languages</span><br>Python, C#, Java, C++, C, Solidity, SQL</li>
                             <li><span>Web Development</span><br>HTML, CSS, JavaScript, ReactJS</li>
-                            <li><span>Data Management and Analytics</span><br>MySQL, MongoDB, Amazon S3</li>
-                            <li><span>FrameWorks</span><br>Flask, Microsoft Bot Framework, Rest API </li>
+                            <li><span>Data Management and Analytics</span><br>MySQL, MongoDB, Amazon S3, Redis, Pinecone</li>
+                            <li><span>FrameWorks</span><br>Flask, .NET Core,  Microsoft Bot Framework, Rest API </li>
                             <li><span>Cloud</span><br> AWS, Azure </li>
                         </ul>
                     </div>
 
                     <div class="tab-contents" id="Experience">
                         <ul>
-                            <li><span>Tata Consultancy Services:- 1 year 2 months </span><br></li>
-                            <li><span>December 2021 - July 2022</span><br> Software Engineer</li>
-                            <li><span>June 2021 - November 2021</span><br> Assistant Software Engineer</li>
+                            <li><span>Synapse Tech Services Inc</span><br></li>
+                            <li><span>April 2023 - February 2024</span><br> Software Developer - Intern & Co-op </li>
+                            <li><span>March 2024 - Present</span><br> Software Developer</li>
+                        </ul>
+                        <br>
+                        <ul>
+                            <li><span>Tata Consultancy Services</span><br></li>
+                            <li><span>June 2021 - July 2022</span><br> Software Engineer</li>
+                            <li><span>January 2021 - June 2021</span><br> Assistant Software Engineer</li>
                         </ul>
                     </div>
 
                     <div class="tab-contents" id="Education">
                         <ul>
-                            <li><span>August 2022 - December 2023</span><br>Masters from University at Buffalo</li>
+                            <li><span>August 2022 - February 2024</span><br>Masters from University at Buffalo</li>
                             <li><span>June 2017 - June 2021</span><br>Bachelors from GITAM University Hyderabad</li>
                         </ul>
                     </div>
@@ -100,38 +105,35 @@
         <h1 class = "sub-title"> Work-Experience </h1>
         <div class="row">
             <div class="about-col-1">
-                <img src="images/tcsimage.jpeg">
+                <!-- <img src="images/tcsimage.jpeg"> -->
+                 <img id="workexp-img" src="images/synapse_tech_services_inc_logo.jpeg" alt="Company Logo">
             </div>
             <div class="about-col-2">
                 
                 <div class="workexp-title">
-                    <p class="workexp-links active-link" onclick="opentab('se' , 'w')"> Software Engineer </p>
-                    <p class="workexp-links" onclick="opentab('ase' , 'w')" > Assistant Software Engineer </p>
+                    <p class="workexp-links active-link" onclick="opentab('synapse' , 'w')"> Synapse Tech Services </p>
+                    <p class="workexp-links" onclick="opentab('tcs' , 'w')" > Tata Consultancy Services </p>
                 </div>
 
-                <div class="workexp-contents active-tab" id="se">
+                <div class="workexp-contents active-tab" id="synapse">
                     <ul>
-                        <span>December 2021 - July 2022</span>
-                        <li>Developed Customs Chatbot for German-based Semiconductor company Infineon, leveraging in bot to
-                            provide 97% accurate answers and 15% increase in operational efficiency utilising Microsoft Bot
-                            Framework (C#), Python, MySQL, and REST API.</li>
-                        <li>Collaborated closely with clients to understand requirements, incorporating feedback into the
-                            development process, resulting in a 50% increase in customer satisfaction and 100% on-time project
-                            delivery.</li>
-                        <li>Played key role in debugging and resolving complex integration issues, enhancing in system reliability
-                            by 35%.</li>
+                        <span>Software Developer  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   April 2023 - Present</span>
+                        <li>Developed scalable backend apps using Python Flask, integrated with ReactJS frontend and MySQL database to serve real-time healthcare queries.</li>
+                        <li>Created automated web scraping pipelines and scheduled data refresh using cron jobs, ensuring continuous ingestion of updated policy data.</li>
+                        <li>Built LLM-powered chatbot with OpenAI + Pinecone for accurate vector-based document search across insurance policies.</li>
+                        <li>Packaged and deployed microservices with Docker on AWS EKS, EC2, and Lambda, ensuring high uptime and horizontal scalability.</li>
+                        <li>Implemented HIPAA-compliant API security using reverse proxy, encrypted communication, and IAM-based role enforcement.</li>
+                        <li>Automated CI/CD pipelines via GitHub Actions and Jenkins, cutting manual DevOps effort by 20+ hours biweekly.</li>
                     </ul>
                 </div>
-                <div class="workexp-contents" id="ase">
+                <div class="workexp-contents" id="tcs">
                     <ul>
-                        <span>June 2021 - November 2021</span>
-                        <li>Designed chatbot application using React JS, JavaScript, and MongoDB, serving in over 500 users
-                            monthly, providing streamlined teaming-up processes, and receiving commendable feedback from 95%
-                            of management.</li>
-                        <li>Spearheaded the deployment of chatbot application on Azure, leading to enhanced scalability and 20%
-                            reduction in response times for user queries.</li>
-                        <li>Mentored 10+ new team members through knowledge transfer sessions, contributing towards a smooth
-                            onboarding efficiency and overall team productivity.</li>
+                        <span>Software Engineer &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; January 2021 - July 2022</span>
+                        <li>Built and deployed chatbot applications using Microsoft Bot Framework (C#), ASP.NET MVC, and ReactJS, boosting operational efficiency by 15%.</li>
+                        <li>Integrated SQL Server and MongoDB databases with custom APIs, improving data access speeds by 30% across teams.</li>
+                        <li>Deployed bots on Azure Cloud, resulting in scalable infrastructure and 20% faster user query responses.</li>
+                        <li>Collaborated with clients and incorporated feedback, increasing satisfaction and maintaining 100% on-time delivery.</li>
+                        <li>Mentored 10+ new team members and contributed to agile planning, code reviews, and bug resolution.</li>
                     </ul>
                 </div>
             </div>
@@ -255,16 +257,29 @@
             event.currentTarget.classList.add('active-link');
             document.getElementById(tabname).classList.add("active-tab");
         }
-        else if (sec == 'w')
+        else if (sec == 'w') 
         {
-            for(tablink of workexplinks){
+            for(tablink of workexplinks)
+            {
                 tablink.classList.remove("active-link");
             }
-            for(tabcontent of workexpcontents){
+            for(tabcontent of workexpcontents)
+            {
                 tabcontent.classList.remove("active-tab");
             }
             event.currentTarget.classList.add('active-link');
             document.getElementById(tabname).classList.add("active-tab");
+
+            // Change logo dynamically
+            const logoImg = document.getElementById("workexp-img");
+            if (tabname === "synapse") 
+            {
+                logoImg.src = "images/synapse_tech_services_inc_logo.jpeg";
+            } 
+            else if (tabname === "tcs") 
+            {
+                logoImg.src = "images/tcsimage.jpeg";
+            }
         }
     }
 
